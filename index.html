@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>PAYMENT THUMAIYA BLOG.QR CODE</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+      <link rel="stylesheet"href="https://cdn.jsdelivr.net/gh/allaboutitappscript/fontbank/banks.min.css">
+   </head>
+   <style>
+      @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+html,body{
+  display: grid;
+  height: 100%;
+  width: 100%;
+  place-items: center;
+  background: linear-gradient(375deg, #000000, #CC0000);
+}
+::selection{
+  color: #fff;
+  background: #1cc7d0;
+}
+.wrapper{
+  height: 400px;
+  width: 320px;
+  position: relative;
+  transform-style: preserve-3d;
+ perspective: 1000px;
+}
+.wrapper .card{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  padding: 5px;
+  background: #fff;
+  border-radius: 10px;
+  transform: translateY(0deg);
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
+  transition: transform 0.7s cubic-bezier(0.4,0.2,0.2,1);
+}
+.wrapper:hover > .front-face{
+  transform: rotateY(-180deg);
+}
+.wrapper .card img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.wrapper .back-face{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  transform: rotateY(180deg);
+}
+.wrapper:hover > .back-face{
+  transform: rotateY(0deg);
+}
+.wrapper .back-face img{
+  height: 150px;
+  width: 150px;
+  padding: 5px;
+  border-radius: 50%;
+  background: linear-gradient(375deg, #000000, #CC0000);
+}
+.wrapper .back-face .info{
+  text-align: center;
+}
+.back-face .info .title{
+  font-size: 30px;
+  font-weight: 500;
+}
+.back-face ul{
+  display: flex;
+}
+.back-face ul a{
+  display: block;
+  height: 37px;
+  width: 37px;
+  color: #fff;
+  text-align: center;
+  margin: 0 5px;
+  line-height: 49px;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  background: linear-gradient(375deg, #CC0000, #000000);
+  transition: all 0.5s ease;
+}
+.back-face ul a:hover{
+  color: #CC0000;
+  border-color: #CC0000;
+  background: linear-gradient(375deg, transparent, transparent);
+}
+   </style>
+   <body>
+      <div class="wrapper">
+         <div class="card front-face">
+            <img src="https://lh5.googleusercontent.com/d/1X3UUaudGbdc0abVtCRHZ4lPIhH1vREyS">
+         </div>
+         <div class="card back-face">
+            <img src="https://lh5.googleusercontent.com/d/1X3UUaudGbdc0abVtCRHZ4lPIhH1vREyS">
+            <div class="info">
+               <div class="title">
+                  SOMCHAI THUMARIYA
+               </div>
+               <p>
+                  ชื่อบัญชีต้องเป็น <b> สมชาย ทุมอาริย </b> เท่านั้น <br>ช่องทางชำระเงินด้วยคิวอาร์โค้ดอื่นๆ ของ Thumariya Blog 
+               </p>
+            </div>
+            <ul>
+               <a href="https://liff.line.me/2006731030-V7AWZeQz"><i class="bank bank-pp xxxl round shadow"></i></a>
+               <a href="https://liff.line.me/2006731036-R89Ae76Y"><i class="bank bank-tmn xxxl round shadow"></i></a>
+               <a href="https://tmn.app.link/9zb3AXwKFPb"><i class="bank bank-tmn  xxxl round shadow"></i></a>
+               
+            </ul>
+         </div>
+      </div>
+   </body>
+</html>
